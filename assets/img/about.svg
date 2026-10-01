@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700" role="img" aria-labelledby="t">
+  <title id="t">CMF Works technician servicing an air-conditioning outdoor unit</title>
+  <defs>
+    <linearGradient id="gWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef4ff"/><stop offset="1" stop-color="#d8e5f7"/>
+    </linearGradient>
+    <linearGradient id="gFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c6d5ec"/><stop offset="1" stop-color="#a9bfdd"/>
+    </linearGradient>
+    <linearGradient id="gUnit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e4ecf7"/>
+    </linearGradient>
+    <linearGradient id="gTech" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a7bff"/><stop offset="1" stop-color="#0a4fbb"/>
+    </linearGradient>
+    <filter id="sh" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0a1f44" flood-opacity=".2"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="500" fill="url(#gWall)"/>
+  <path d="M0 0h360L0 400Z" fill="#fff" opacity=".42"/>
+  <rect y="492" width="900" height="12" fill="#b6c7de"/>
+  <rect y="504" width="900" height="196" fill="url(#gFloor)"/>
+
+  <!-- indoor unit on the wall -->
+  <g transform="translate(508 92) scale(1.04)" filter="url(#sh)">
+    <rect width="300" height="94" rx="18" fill="url(#gUnit)" stroke="#d9e3f1" stroke-width="2"/>
+    <path d="M20 9h260a9 9 0 0 1 9 9v11H11V18a9 9 0 0 1 9-9Z" fill="#fff" opacity=".9"/>
+    <rect x="12" y="50" width="276" height="27" rx="13.5" fill="#e3ecf9" stroke="#cfdcee" stroke-width="1.5"/>
+    <g stroke="#b9cbe6" stroke-width="2" stroke-linecap="round"><path d="M32 59h236M32 68h236"/></g>
+    <rect x="234" y="18" width="48" height="25" rx="7" fill="#102a58"/>
+    <text x="258" y="35.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#7db4ff">22&#176;</text>
+    <circle cx="26" cy="30" r="4.5" fill="#22c55e"/>
+  </g>
+
+  <!-- pipe to condenser -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M560 202v152c0 34-22 54-58 70" stroke="#b6c7de" stroke-width="11"/>
+    <path d="M592 204v176c0 38-26 62-66 80" stroke="#8fa6c6" stroke-width="6" stroke-dasharray="2 14"/>
+  </g>
+
+  <!-- outdoor condenser -->
+  <g transform="translate(64 246) scale(1.32)" filter="url(#sh)">
+    <rect width="220" height="238" rx="15" fill="url(#gUnit)" stroke="#d4e0ef" stroke-width="2"/>
+    <rect x="11" y="11" width="198" height="28" rx="9" fill="#eef4fc" stroke="#d7e2f0"/>
+    <g stroke="#c3d3e8" stroke-width="2" stroke-linecap="round"><path d="M24 19h172M24 31h172"/></g>
+    <circle cx="110" cy="140" r="56" fill="#eef4fc" stroke="#cddbec" stroke-width="3"/>
+    <g fill="#c5d6ec">
+      <rect x="104" y="92" width="12" height="50" rx="6" transform="rotate(0 110 140)"/>
+      <rect x="104" y="92" width="12" height="50" rx="6" transform="rotate(45 110 140)"/>
+      <rect x="104" y="92" width="12" height="50" rx="6" transform="rotate(90 110 140)"/>
+      <rect x="104" y="92" width="12" height="50" rx="6" transform="rotate(135 110 140)"/>
+    </g>
+    <circle cx="110" cy="140" r="11" fill="#9db4d2"/>
+    <rect x="26" y="234" width="30" height="12" rx="4" fill="#8fa6c6"/>
+    <rect x="164" y="234" width="30" height="12" rx="4" fill="#8fa6c6"/>
+  </g>
+
+  <!-- technician (closer view) -->
+  <g transform="translate(400 196) scale(1.42)" filter="url(#sh)">
+    <rect x="52" y="242" width="25" height="88" rx="11" fill="#17356b"/>
+    <rect x="95" y="242" width="25" height="88" rx="11" fill="#17356b"/>
+    <rect x="46" y="316" width="34" height="16" rx="7" fill="#0a1f44"/>
+    <rect x="92" y="316" width="34" height="16" rx="7" fill="#0a1f44"/>
+    <rect x="38" y="140" width="96" height="108" rx="24" fill="url(#gTech)"/>
+    <rect x="48" y="186" width="76" height="10" rx="5" fill="#7db4ff" opacity=".55"/>
+    <rect x="62" y="152" width="48" height="26" rx="8" fill="#fff" opacity=".9"/>
+    <!-- arm reaching to the unit -->
+    <rect x="8" y="146" width="20" height="96" rx="10" fill="#0b62d6" transform="rotate(14 18 190)"/>
+    <circle cx="10" cy="152" r="10" fill="#f0c3a0"/>
+    <rect x="118" y="150" width="20" height="96" rx="10" fill="#0a4fbb" transform="rotate(-16 128 194)"/>
+    <circle cx="150" cy="156" r="10" fill="#f0c3a0"/>
+    <rect x="77" y="126" width="18" height="22" rx="8" fill="#e8b894"/>
+    <circle cx="86" cy="110" r="24" fill="#f0c3a0"/>
+    <path d="M60 106a26 26 0 0 1 52 0v6H60Z" fill="#0a1f44"/>
+    <rect x="52" y="106" width="68" height="9" rx="4.5" fill="#17356b"/>
+  </g>
+
+  <!-- wrench in hand -->
+  <g transform="rotate(28 262 380)">
+    <path d="M256 396l-6-16a16 16 0 0 1 8-20l10 4-6 10 8 4 6-10 10 4a16 16 0 0 1-8 20l-6 16Z" fill="#9aa8bd"/>
+  </g>
+
+  <!-- toolbox on floor -->
+  <g transform="translate(60 566)">
+    <rect x="0" y="12" width="150" height="60" rx="10" fill="#0a1f44"/>
+    <rect x="0" y="12" width="150" height="14" rx="7" fill="#17356b"/>
+    <path d="M52 12V2a10 10 0 0 1 10-10h26a10 10 0 0 1 10 10v10" fill="none" stroke="#0a1f44" stroke-width="7"/>
+    <rect x="120" y="26" width="18" height="28" rx="5" fill="#7db4ff"/>
+  </g>
+</svg>

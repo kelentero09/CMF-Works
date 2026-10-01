@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="t">
+  <title id="t">Two new TCL air-conditioning units installed on a residential property</title>
+  <defs>
+    <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceafc"/><stop offset="1" stop-color="#c4d9f4"/>
+    </linearGradient>
+    <linearGradient id="gWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdfdff"/><stop offset="1" stop-color="#e7eefa"/>
+    </linearGradient>
+    <linearGradient id="gUnit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e5edf8"/>
+    </linearGradient>
+    <filter id="sh" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0a1f44" flood-opacity=".18"/>
+    </filter>
+    <g id="indoor">
+      <rect x="0" y="0" width="300" height="94" rx="18" fill="url(#gUnit)" stroke="#d9e3f1" stroke-width="2"/>
+      <path d="M20 9h260a9 9 0 0 1 9 9v11H11V18a9 9 0 0 1 9-9Z" fill="#fff" opacity=".9"/>
+      <rect x="12" y="50" width="276" height="27" rx="13.5" fill="#e3ecf9" stroke="#cfdcee" stroke-width="1.5"/>
+      <g stroke="#b9cbe6" stroke-width="2" stroke-linecap="round"><path d="M32 59h236M32 68h236"/></g>
+      <rect x="234" y="18" width="48" height="25" rx="7" fill="#102a58"/>
+      <text x="258" y="35.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#7db4ff">24&#176;</text>
+      <circle cx="26" cy="30" r="4.5" fill="#22c55e"/>
+    </g>
+    <g id="outdoor">
+      <rect x="0" y="0" width="220" height="238" rx="15" fill="url(#gUnit)" stroke="#d4e0ef" stroke-width="2"/>
+      <rect x="11" y="11" width="198" height="28" rx="9" fill="#eef4fc" stroke="#d7e2f0"/>
+      <g stroke="#c3d3e8" stroke-width="2" stroke-linecap="round"><path d="M24 19h172M24 31h172"/></g>
+      <circle cx="110" cy="140" r="56" fill="#eef4fc" stroke="#cddbec" stroke-width="3"/>
+      <g fill="#c5d6ec">
+        <rect x="104" y="92" width="12" height="50" rx="6" transform="rotate(0 110 140)"/>
+        <rect x="104" y="92" width="12" height="50" rx="6" transform="rotate(45 110 140)"/>
+        <rect x="104" y="92" width="12" height="50" rx="6" transform="rotate(90 110 140)"/>
+        <rect x="104" y="92" width="12" height="50" rx="6" transform="rotate(135 110 140)"/>
+      </g>
+      <circle cx="110" cy="140" r="11" fill="#9db4d2"/>
+      <rect x="26" y="234" width="30" height="12" rx="4" fill="#8fa6c6"/>
+      <rect x="164" y="234" width="30" height="12" rx="4" fill="#8fa6c6"/>
+    </g>
+  </defs>
+
+  <!-- sky + roof -->
+  <rect width="800" height="600" fill="url(#gSky)"/>
+  <path d="M0 0h800v120H0Z" fill="#eaf3ff" opacity=".55"/>
+  <path d="M-20 168 400 46l420 122v26H-20Z" fill="#17356b"/>
+  <path d="M-20 190 400 68l420 122v18H-20Z" fill="#0f2a52"/>
+  <rect y="192" width="800" height="238" fill="url(#gWall)"/>
+
+  <!-- window -->
+  <rect x="556" y="242" width="176" height="140" rx="8" fill="#cfe2f8" stroke="#c0d3ea" stroke-width="3"/>
+  <path d="M644 242v140M556 312h176" stroke="#c0d3ea" stroke-width="3"/>
+  <path d="M576 300l48-46 40 40" fill="none" stroke="#fff" stroke-width="6" opacity=".6"/>
+
+  <!-- two indoor units -->
+  <g filter="url(#sh)">
+    <use href="#indoor" transform="translate(64 226) scale(.86)"/>
+    <use href="#indoor" transform="translate(322 226) scale(.86)"/>
+  </g>
+
+  <!-- pipe runs -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M150 312v92c0 16-10 26-26 34" stroke="#b6c7de" stroke-width="7"/>
+    <path d="M408 312v104c0 18-12 30-30 38" stroke="#b6c7de" stroke-width="7"/>
+  </g>
+
+  <!-- ground -->
+  <rect y="430" width="800" height="10" fill="#b6c7de"/>
+  <rect y="440" width="800" height="160" fill="#b9cde4"/>
+  <path d="M0 500h800" stroke="#a9c0da" stroke-width="3" opacity=".7"/>
+
+  <!-- condenser unit -->
+  <g filter="url(#sh)">
+    <use href="#outdoor" transform="translate(596 254) scale(.9)"/>
+  </g>
+
+  <!-- shrub -->
+  <g transform="translate(96 396)">
+    <circle cx="34" cy="30" r="34" fill="#3f9d6b" opacity=".85"/>
+    <circle cx="70" cy="26" r="28" fill="#4bb07c" opacity=".85"/>
+    <circle cx="18" cy="40" r="26" fill="#358a5b" opacity=".85"/>
+    <rect x="30" y="56" width="34" height="26" rx="6" fill="#9a7b57"/>
+  </g>
+</svg>

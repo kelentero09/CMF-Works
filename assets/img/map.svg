@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" role="img" aria-labelledby="t d">
+  <title id="t">Stylised service-area map of Albay</title>
+  <desc id="d">Illustrative map showing the CMF Works location in Matacon, Polangui, together with nearby service areas. Not to scale.</desc>
+  <defs>
+    <linearGradient id="mLand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef4fb"/><stop offset="1" stop-color="#e2ecf8"/>
+    </linearGradient>
+    <linearGradient id="mWater" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c8dff6"/><stop offset="1" stop-color="#a9ccee"/>
+    </linearGradient>
+    <linearGradient id="mPin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a7bff"/><stop offset="1" stop-color="#0a4fbb"/>
+    </linearGradient>
+    <filter id="mShadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#0a1f44" flood-opacity=".3"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="640" fill="url(#mLand)"/>
+
+  <!-- mountain range (Sierra Madre side) -->
+  <path d="M640 0h260v214c-86 44-176 22-232-46-30-37-42-92-28-168Z" fill="#dbe9d8"/>
+  <path d="M700 40l38 62 30-30 44 66 32-24 56 78v-92H700Z" fill="#c6dcbf"/>
+  <text x="760" y="196" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.6" fill="#8aa887">SIERRA MADRE</text>
+
+  <!-- coastline / sea -->
+  <path d="M900 250c-96 34-140 108-124 178 12 54 62 100 124 122V250Z" fill="url(#mWater)"/>
+  <path d="M900 250c-96 34-140 108-124 178 12 54 62 100 124 122" fill="none" stroke="#8fbde6" stroke-width="3"/>
+  <text x="856" y="452" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4" fill="#5f96cc" transform="rotate(-84 856 452)">PACIFIC COAST</text>
+
+  <!-- land labels -->
+  <text x="240" y="120" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="8" fill="#0a1f44" opacity=".07">ALBAY</text>
+
+  <!-- roads -->
+  <g fill="none" stroke-linecap="round">
+    <g stroke="#dbe4f0" stroke-width="13">
+      <path d="M60 604C150 556 176 486 210 420"/>
+      <path d="M210 420c48-72 130-108 208-120"/>
+      <path d="M418 300c86-28 178-24 258 16"/>
+      <path d="M676 316c40 12 74 30 104 56"/>
+      <path d="M210 420c-16-58-6-104 24-144"/>
+      <path d="M234 276c34-42 78-64 130-70"/>
+      <path d="M418 300c10 66 4 128-24 186"/>
+    </g>
+    <g stroke="#ffffff" stroke-width="9">
+      <path d="M60 604C150 556 176 486 210 420"/>
+      <path d="M210 420c48-72 130-108 208-120"/>
+      <path d="M418 300c86-28 178-24 258 16"/>
+      <path d="M676 316c40 12 74 30 104 56"/>
+      <path d="M210 420c-16-58-6-104 24-144"/>
+      <path d="M234 276c34-42 78-64 130-70"/>
+      <path d="M418 300c10 66 4 128-24 186"/>
+    </g>
+    <path d="M210 420c48-72 130-108 208-120" stroke="#f5c542" stroke-width="3" stroke-dasharray="16 12"/>
+  </g>
+
+  <!-- towns -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <!-- Libon -->
+    <circle cx="676" cy="316" r="8" fill="#ffffff" stroke="#5b7ba6" stroke-width="4"/>
+    <text x="694" y="322" font-size="19" font-weight="700" fill="#1b2b45" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">Libon</text>
+
+    <!-- Guinobatan -->
+    <circle cx="418" cy="300" r="8" fill="#ffffff" stroke="#5b7ba6" stroke-width="4"/>
+    <text x="436" y="288" font-size="19" font-weight="700" fill="#1b2b45" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">Guinobatan</text>
+
+    <!-- Iriga City -->
+    <circle cx="394" cy="486" r="8" fill="#ffffff" stroke="#5b7ba6" stroke-width="4"/>
+    <text x="412" y="494" font-size="19" font-weight="700" fill="#1b2b45" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">Iriga City</text>
+
+    <!-- Polangui -->
+    <circle cx="234" cy="276" r="9" fill="#ffffff" stroke="#5b7ba6" stroke-width="4"/>
+    <text x="212" y="238" text-anchor="middle" font-size="19" font-weight="700" fill="#1b2b45" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">Polangui</text>
+  </g>
+
+  <!-- service radius -->
+  <circle cx="234" cy="276" r="118" fill="#1a7bff" opacity=".07"/>
+  <circle cx="234" cy="276" r="118" fill="none" stroke="#1a7bff" stroke-width="2" stroke-dasharray="8 10" opacity=".45"/>
+
+  <!-- main pin -->
+  <g filter="url(#mShadow)">
+    <path d="M234 262c-19 0-34 15-34 34 0 25 34 66 34 66s34-41 34-66c0-19-15-34-34-34Z" fill="url(#mPin)" stroke="#ffffff" stroke-width="3"/>
+    <circle cx="234" cy="294" r="13" fill="#ffffff"/>
+  </g>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="286" y="212" width="262" height="66" rx="12" fill="#0a1f44"/>
+    <text x="304" y="238" font-size="16" font-weight="800" fill="#ffffff">CMF Works</text>
+    <text x="304" y="262" font-size="14" font-weight="600" fill="#9fc4ff">Zone 1, Matacon, Polangui, Albay</text>
+  </g>
+  <path d="M286 245c-26 6-40 20-52 30" fill="none" stroke="#0a1f44" stroke-width="2.5" stroke-dasharray="6 6"/>
+
+  <!-- legend -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="36" y="520" width="252" height="92" rx="14" fill="#ffffff" opacity=".92"/>
+    <circle cx="66" cy="548" r="9" fill="url(#mPin)"/>
+    <text x="84" y="554" font-size="14" font-weight="700" fill="#1b2b45">Main office &amp; base</text>
+    <circle cx="66" cy="580" r="9" fill="#ffffff" stroke="#5b7ba6" stroke-width="4"/>
+    <text x="84" y="586" font-size="14" font-weight="600" fill="#4a5b76">Service area</text>
+  </g>
+
+  <text x="864" y="616" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#7d8ea8">Illustrative map — not to scale</text>
+</svg>
